@@ -25,21 +25,39 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Elevate Online Store',
-      theme: Theme.of(context).copyWith(
+      theme: ThemeData().copyWith(
+        scaffoldBackgroundColor: secondaryColor1,
         primaryColor: primaryColor,
         buttonTheme: const ButtonThemeData(buttonColor: primaryColor),
         backgroundColor: secondaryColor,
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: primaryColor),
+        colorScheme: ThemeData().colorScheme.copyWith(
+              primary: primaryColor,
+              secondary: secondaryColor,
+              tertiary: secondaryColor1,
+            ),
         textTheme: const TextTheme(
           bodyText2: TextStyle(
-              color: Colors.black, fontSize: 13, fontFamily: 'OpenSans'),
+            color: Colors.black,
+            fontSize: 14,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w600,
+          ),
           bodyText1: TextStyle(
-              color: Colors.black, fontSize: 13, fontFamily: 'OpenSans'),
+            color: Colors.black,
+            fontSize: 15,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+          ),
           subtitle1: TextStyle(
               color: Colors.black,
-              fontFamily: 'OpenSans',
-              fontSize: 17,
+              fontFamily: 'Nunito',
+              fontSize: 14,
               fontWeight: FontWeight.w600),
+          subtitle2: TextStyle(
+              color: Colors.black,
+              fontFamily: 'Nunito',
+              fontSize: 20,
+              fontWeight: FontWeight.w700),
         ),
         cardTheme: const CardTheme(
           elevation: 5,

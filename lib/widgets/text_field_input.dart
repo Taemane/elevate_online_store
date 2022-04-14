@@ -1,3 +1,4 @@
+import 'package:elevate_online_store/themes/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -24,19 +25,33 @@ class TextFieldInput extends StatelessWidget {
     final inputBorder =
         OutlineInputBorder(borderSide: Divider.createBorderSide(context));
 
-    return TextField(
-      controller: textEditingController,
-      decoration: InputDecoration(
-        hintText: hintText,
-        filled: true,
-        prefixIcon: FaIcon(icon),
-        border: inputBorder,
-        focusedBorder: inputBorder,
-        enabledBorder: inputBorder,
-        contentPadding: const EdgeInsets.all(8),
+    return SizedBox(
+      height: 40,
+      child: TextField(
+        controller: textEditingController,
+        decoration: InputDecoration(
+          hintText: hintText,
+          filled: true,
+          fillColor: tertiaryColor,
+          prefixIcon: Container(
+            width: 15,
+            child: Center(
+              child: FaIcon(
+                icon,
+                size: 17,
+              ),
+            ),
+            alignment: Alignment.centerLeft,
+          ),
+          border: inputBorder,
+          focusedBorder: inputBorder,
+          enabledBorder: inputBorder,
+          contentPadding: const EdgeInsets.all(0),
+          focusColor: Theme.of(context).primaryColor,
+        ),
+        keyboardType: textInputType,
+        obscureText: isPassword,
       ),
-      keyboardType: textInputType,
-      obscureText: isPassword,
     );
   }
 }

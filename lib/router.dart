@@ -2,7 +2,6 @@ import 'package:elevate_online_store/constants/strings.dart';
 import 'package:elevate_online_store/screens/all_items.dart';
 import 'package:elevate_online_store/screens/auth/sign_in.dart';
 import 'package:elevate_online_store/screens/auth/sign_up.dart';
-import 'package:elevate_online_store/screens/cart.dart';
 import 'package:elevate_online_store/screens/error_page.dart';
 import 'package:elevate_online_store/screens/item_details.dart';
 import 'package:elevate_online_store/screens/landing_page.dart';
@@ -18,7 +17,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SignIn());
       case SIGN_UP:
         return MaterialPageRoute(builder: (_) => const SignUp());
-      case HOME:
+      case TAB_SCREEN:
         return MaterialPageRoute(builder: (_) => const MainScreen());
       case ALL_ITEMS:
         return MaterialPageRoute(builder: (_) => const AllItems());

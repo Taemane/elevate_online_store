@@ -20,30 +20,33 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          _buildTabItem(
-            index: 0,
-            icon: FontAwesomeIcons.house,
-          ),
-          _buildTabItem(
-            index: 1,
-            icon: FontAwesomeIcons.heart,
-          ),
-          _buildTabItem(
-            index: 2,
-            icon: FontAwesomeIcons.bagShopping,
-          ),
-          _buildTabItem(
-            index: 3,
-            icon: FontAwesomeIcons.bell,
-          ),
-          _buildTabItem(
-            index: 4,
-            icon: FontAwesomeIcons.person,
-          ),
-        ],
+      child: Container(
+        padding: const EdgeInsets.all(8),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            _buildTabItem(
+              index: 0,
+              icon: FontAwesomeIcons.house,
+            ),
+            _buildTabItem(
+              index: 1,
+              icon: FontAwesomeIcons.solidHeart,
+            ),
+            _buildTabItem(
+              index: 2,
+              icon: FontAwesomeIcons.bagShopping,
+            ),
+            _buildTabItem(
+              index: 3,
+              icon: FontAwesomeIcons.solidBell,
+            ),
+            _buildTabItem(
+              index: 4,
+              icon: FontAwesomeIcons.solidUser,
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -66,7 +69,8 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
         padding: const EdgeInsets.all(8),
         child: FaIcon(
           icon,
-          color: isSelected ? primaryColor : Colors.black,
+          color: isSelected ? primaryColor : Colors.black54,
+          size: 16,
         ),
       ),
     );
