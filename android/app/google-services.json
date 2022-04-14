@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "613588218703",
+    "project_id": "elevate-online-store",
+    "storage_bucket": "elevate-online-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613588218703:android:449c197b10f126481c4b3a",
+        "android_client_info": {
+          "package_name": "com.orionlofty.elevate_online_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613588218703-u5cr4rqro3p4sb2jq9k8qssctgs3gsu4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcFthBMKbWOClKci2ekeeA4d8L1CwIQlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613588218703-u5cr4rqro3p4sb2jq9k8qssctgs3gsu4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
