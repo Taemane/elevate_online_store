@@ -1,3 +1,4 @@
+import 'package:elevate_online_store/constants/strings.dart';
 import 'package:elevate_online_store/themes/colors.dart';
 import 'package:elevate_online_store/widgets/recommended_item_card.dart';
 import 'package:elevate_online_store/widgets/sale_item_card.dart';
@@ -25,10 +26,23 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 30),
+        child: SingleChildScrollView(
           child: Column(
             children: [
+              Container(
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                alignment: Alignment.topRight,
+                child: InkWell(
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed(LANDING);
+                  },
+                  child: const FaIcon(
+                    FontAwesomeIcons.arrowRightFromBracket,
+                    size: 20,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Row(
@@ -45,8 +59,8 @@ class _HomeState extends State<Home> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Hi user!',
-                          style: Theme.of(context).textTheme.bodyText1,
+                          'Hi Junior!',
+                          style: Theme.of(context).textTheme.subtitle2,
                         ),
                         Row(
                           children: [

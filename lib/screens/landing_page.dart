@@ -60,7 +60,7 @@ class LandingPage extends StatelessWidget {
               flex: 1,
             ),
             FilledButton(
-              text: 'Get Started',
+              text: 'Shop Now!',
               width: double.infinity,
               color: Theme.of(context).primaryColor,
               textColor: Colors.white,
@@ -72,11 +72,11 @@ class LandingPage extends StatelessWidget {
               height: 8,
             ),
             FilledButton(
-              text: 'I already have an account',
+              text: 'Sign in',
               width: double.infinity,
               color: Colors.white,
               onClicked: () {
-                Navigator.of(context).pushNamed(SIGN_UP);
+                Navigator.of(context).pushNamed(SIGN_IN);
               },
             ),
           ],

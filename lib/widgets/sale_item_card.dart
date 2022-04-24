@@ -120,7 +120,7 @@ class SaleItemCard extends StatelessWidget {
                                 Theme.of(context).colorScheme.tertiary,
                             radius: 14,
                             child: FaIcon(
-                              FontAwesomeIcons.solidBell,
+                              FontAwesomeIcons.bell,
                               size: 14,
                               color: Theme.of(context).colorScheme.primary,
                             ),
